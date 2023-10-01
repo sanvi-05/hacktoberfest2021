@@ -27,6 +27,10 @@ public class ReverseArray{
 class Solution{
 	void reverseArray(int arr[]){
 		int i =0,j = arr.length-1;
+		//Handling invalid inputs
+		if(arr==null||i<0||end>arr.length||start>=end){
+			System.out.println("Invalid array input"):
+		}
 		while(i<j){
 			arr[i]=arr[i]+arr[j];
 			arr[j]=arr[i]-arr[j];
